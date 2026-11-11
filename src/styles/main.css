@@ -112,7 +112,8 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .site-header__logo { display: flex; align-items: center; min-height: 44px; }
-.site-header__logo svg { height: 30px; width: auto; }
+/* Brand manual: the horizontal signature is never shown narrower than 120px. */
+.site-header__logo svg { width: 120px; height: auto; }
 
 .nav-desktop { display: none; align-items: center; gap: clamp(18px, 2.4vw, 36px); }
 .nav-desktop__link, .nav-desktop__cta {
