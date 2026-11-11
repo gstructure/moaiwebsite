@@ -177,6 +177,7 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
 .front--construccion { --front-bg: var(--stone); --front-fg: var(--paper); }
 .front.is-active { --front-bg: var(--clay); --front-fg: var(--ink); background-image: none; }
 
+.front__heading { font: inherit; }
 .front__button {
   width: 100%; background: transparent; color: inherit; border: 0; cursor: pointer; text-align: left;
   font-family: var(--font-sans); padding: 16px clamp(20px, 2vw, 28px); min-height: 64px;

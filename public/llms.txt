@@ -1,0 +1,23 @@
+# MOAI
+
+> MOAI es la marca comercial de SUCOSTRUCT S.A.S. B.I.C., una sociedad con sede en Guayaquil, Ecuador. Desarrolla soluciones en cuatro frentes: consultoría, tecnología, diseño y construcción. Lema: "Ideas con peso."
+
+## Frentes
+
+- [MOAI Consultoría](https://moai.ec/#coaching): Consultoría y desarrollo de soluciones empresariales, con un servicio de coaching cognitivo-conductual no clínico para personas y equipos. No es psicoterapia, diagnóstico ni tratamiento.
+- [MOAI Tecnología](https://moai.ec/#tecnologia): Software, inteligencia artificial y productos digitales. Aquí nacen KAIRON (prototipo en pruebas) y RANO (proyecto experimental). Ninguno de los dos es un servicio clínico.
+- [MOAI Diseño](https://moai.ec/#frentes): Arquitectura y diseño. Espacios pensados para quienes los habitan.
+- [MOAI Construcción](https://moai.ec/#direccion): Construcción y obra civil, bajo la dirección del Ing. José Suco Calle, ingeniero civil y mecánico.
+
+## Empresa
+
+- [Historia](https://moai.ec/#historia): Cómo nace MOAI y por qué SUCOSTRUCT S.A.S. B.I.C. la adopta como identidad comercial.
+- [Dirección](https://moai.ec/#direccion): Guillermo Suco, presidente y representante legal; José Suco Calle, director de MOAI Construcción.
+- [KAIRON](https://getkairon.app): Inteligencia artificial con enfoque cognitivo-conductual no clínico.
+
+## Contacto
+
+- [Proyectos](mailto:hola@moai.ec): hola@moai.ec
+- [Coaching](mailto:coaching@moai.ec): coaching@moai.ec
+- Teléfono: +593 98 687 5121
+- Ubicación: Guayaquil, Ecuador
