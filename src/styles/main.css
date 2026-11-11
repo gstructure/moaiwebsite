@@ -322,6 +322,10 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
 .milestones__title { font-size: 18px; font-weight: 700; line-height: 1.3; }
 .milestones__desc { font-size: 15px; color: var(--mute); line-height: 1.45; }
 
+/* Third-party membership badges keep their own colours, so they sit on a white tile. */
+.badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.badge { width: 112px; height: 112px; padding: 8px; background: #fff; display: flex; align-items: center; justify-content: center; }
+.badge img { width: 100%; height: 100%; object-fit: contain; }
 .people__spacer { height: clamp(40px, 6vw, 96px); }
 
 .director__text { display: flex; flex-direction: column; gap: clamp(22px, 2.6vw, 32px); justify-content: flex-end; }
