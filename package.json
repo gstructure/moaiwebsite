@@ -1,0 +1,17 @@
+{
+  "name": "moai-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MOAI · Ideas con peso — sitio estático de SUCOSTRUCT S.A.S. B.I.C.",
+  "type": "module",
+  "engines": { "node": ">=20.19" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && bash scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
+  }
+}
