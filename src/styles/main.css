@@ -98,6 +98,7 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
 .label--stone { color: var(--stone); }
 .accent { color: var(--clay); }
 .only-desktop { display: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 [data-reveal].reveal-init { opacity: 0; transform: translateY(32px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); }
 [data-reveal].reveal-init.is-visible { opacity: 1; transform: none; }
@@ -382,6 +383,10 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
 .site-footer__col { display: flex; flex-direction: column; gap: 10px; font-size: 16px; }
 .site-footer__col a { color: var(--soft); text-decoration: none; }
 .site-footer__col a:hover { color: var(--paper); }
+/* Brand manual, "Arquitectura de marca": block logotype + descriptor in Archivo Regular,
+   descriptor set at 7/6 of the logotype height, gap of half that height. */
+.unit { display: flex; align-items: center; gap: 7px; line-height: 1; padding: 3px 0; color: var(--paper); font-weight: 400; }
+.unit svg { width: 56px; height: 14px; flex-shrink: 0; }
 .site-footer__legal { font-size: 14px; line-height: 1.5; color: var(--mute); }
 .site-footer__copy { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; }
 .site-footer__wordmark { width: 100%; height: auto; margin-bottom: -2px; }
