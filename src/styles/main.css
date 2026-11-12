@@ -272,7 +272,7 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
   display: flex; flex-direction: column; justify-content: space-between; gap: 24px;
 }
 .card-rano__meta { display: flex; justify-content: space-between; color: inherit; }
-.card-rano__symbol { width: 96px; height: auto; }
+.card-rano__symbol { width: 96px; height: 96px; flex-shrink: 0; }
 .card-rano__body { display: flex; flex-direction: column; gap: 14px; }
 .card-rano__name { font-size: 96px; font-weight: 700; letter-spacing: -0.05em; line-height: 0.82; }
 .card-rano__body p { font-size: 16px; line-height: 1.5; text-wrap: pretty; }
@@ -430,7 +430,7 @@ section[id], #frentes { scroll-margin-top: var(--header-h); }
   .shot { width: 400px; }
   .shot--wide { width: 560px; }
   .shot--drop, .card-rano { margin-top: 120px; }
-  .card-rano { width: 360px; height: var(--strip-h); }
+  .card-rano { width: 360px; }
 
   .founder__text { grid-column: 1 / span 5; grid-row: 1; padding-top: 96px; }
   .founder__photo { grid-column: 7 / span 6; grid-row: 1; }
