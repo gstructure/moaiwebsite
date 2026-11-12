@@ -110,38 +110,39 @@ The script uploads `dist/assets/*` with a one-year immutable cache, everything e
 
 ## 4. After the site is live: SEO checklist
 
-The site already ships with everything search engines and social platforms need (title and description, canonical URL, Open Graph and X cards, `sitemap.xml`, `robots.txt`, structured data, `llms.txt`). These steps tell Google and Bing the site exists. Do them once, after `https://moai.ec` is working.
+The site already ships with everything search engines and social platforms need (title and description, canonical URL, Open Graph and X cards, `sitemap.xml`, `robots.txt`, structured data, `llms.txt`). These steps tell Google and Bing the site exists. Do them once, after `https://www.moai.ec` is working.
 
 **First, check the basics (5 minutes)**
 
-- [ ] `https://moai.ec` opens with the padlock (HTTPS).
-- [ ] `https://www.moai.ec` and `http://moai.ec` both redirect to `https://moai.ec`. In Amplify: **Hosting → Custom domains**, enable the "redirect www to root" option (or the reverse, but then tell me so the canonical URL can be changed to match).
-- [ ] These open in the browser: `https://moai.ec/sitemap.xml`, `https://moai.ec/robots.txt`, `https://moai.ec/og-image.jpg`.
-- [ ] A made-up address such as `https://moai.ec/no-existe` shows the "Página no encontrada" page.
+- [ ] `https://www.moai.ec` opens with the padlock (HTTPS).
+- [ ] `https://moai.ec` and `http://moai.ec` both redirect to `https://www.moai.ec` (the address used in the canonical URL, sitemap and share tags). In Amplify: **Hosting → Rewrites and redirects**, make sure the rule from `https://moai.ec` to `https://www.moai.ec` is type **301 (Redirect - permanent)**, not 302.
+- [ ] In the same screen, set the catch-all rule (source `/<*>`) to target `/404.html` with type **404 (Rewrite)**, so unknown addresses show the "Página no encontrada" page.
+- [ ] These open in the browser: `https://www.moai.ec/sitemap.xml`, `https://www.moai.ec/robots.txt`, `https://www.moai.ec/og-image.jpg`.
+- [ ] A made-up address such as `https://www.moai.ec/no-existe` shows the "Página no encontrada" page.
 
 **Google (10 minutes)**
 
-- [ ] Open [Google Search Console](https://search.google.com/search-console) → **Add property** → choose **Domain** and enter `moai.ec`.
+- [ ] Open [Google Search Console](https://search.google.com/search-console) → **Add property** → choose **Domain** and enter `moai.ec` (this covers both `moai.ec` and `www.moai.ec`).
 - [ ] Google shows a `TXT` record. Add it at your DNS provider (Route 53 or wherever the domain lives), then click **Verify**. DNS can take from a few minutes to a few hours.
 - [ ] In the left menu, **Sitemaps** → enter `sitemap.xml` → **Submit**.
-- [ ] In the top search bar, paste `https://moai.ec/` → **Request indexing**.
+- [ ] In the top search bar, paste `https://www.moai.ec/` → **Request indexing**.
 
 **Bing (5 minutes)** — also feeds DuckDuckGo, Yahoo and ChatGPT search.
 
 - [ ] Open [Bing Webmaster Tools](https://www.bing.com/webmasters) → sign in → **Import from Google Search Console** (fastest; it copies the verification and sitemap).
-- [ ] If you add the site manually instead: verify it, then **Sitemaps → Submit sitemap** → `https://moai.ec/sitemap.xml`.
+- [ ] If you add the site manually instead: verify it, then **Sitemaps → Submit sitemap** → `https://www.moai.ec/sitemap.xml`.
 
 **Test how it looks and scores**
 
-- [ ] [Rich Results Test](https://search.google.com/test/rich-results): paste `https://moai.ec/` and confirm the structured data is read with no errors.
-- [ ] [PageSpeed Insights](https://pagespeed.web.dev/): paste `https://moai.ec/`. The local production build scores 100 for Performance, Best Practices and SEO.
-- [ ] [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) and [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/): paste `https://moai.ec/` to preview the share card and refresh their cache.
+- [ ] [Rich Results Test](https://search.google.com/test/rich-results): paste `https://www.moai.ec/` and confirm the structured data is read with no errors.
+- [ ] [PageSpeed Insights](https://pagespeed.web.dev/): paste `https://www.moai.ec/`. The local production build scores 100 for Performance, Best Practices and SEO.
+- [ ] [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) and [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/): paste `https://www.moai.ec/` to preview the share card and refresh their cache.
 - [ ] Send the link to yourself on WhatsApp to see the preview. WhatsApp caches previews, so after changing `og-image.jpg` add `?v=2` to the link when testing.
 
 **Help Google connect the brand (optional but worth it)**
 
 - [ ] Create a [Google Business Profile](https://www.google.com/business/) for MOAI in Guayaquil. This is what puts the company on Google Maps and in the side panel of search results.
-- [ ] Add `https://moai.ec` to the company's LinkedIn page and other profiles. When those profiles exist, send me the links so they can be added to the structured data (`sameAs`).
+- [ ] Add `https://www.moai.ec` to the company's LinkedIn page and other profiles. When those profiles exist, send me the links so they can be added to the structured data (`sameAs`).
 
 **What to expect**
 
@@ -156,7 +157,7 @@ The site already ships with everything search engines and social platforms need 
 
 ## Notes
 
-- **Domain:** canonical URL, Open Graph tags, `robots.txt` and `sitemap.xml` assume `https://moai.ec`. If the domain changes, update `index.html`, `public/robots.txt`, `public/sitemap.xml` and `public/llms.txt`.
+- **Domain:** canonical URL, Open Graph tags, `robots.txt` and `sitemap.xml` assume `https://www.moai.ec`. If the domain changes, update `index.html`, `public/robots.txt`, `public/sitemap.xml` and `public/llms.txt`.
 - **Editing copy:** all text lives in `index.html`. The FAQ also appears in the `FAQPage` JSON-LD block in `<head>`; keep both in sync.
 - **Images:** photos are pre-optimized WebP. To replace one, export it at the same widths (see file names in `src/assets/images/`) and keep the file names, or update the `src`/`srcset` in `index.html`.
 - **Accessibility / motion:** animations are disabled for visitors with `prefers-reduced-motion`; content stays readable with JavaScript turned off.

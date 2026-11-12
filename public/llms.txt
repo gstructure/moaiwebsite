@@ -4,15 +4,15 @@
 
 ## Frentes
 
-- [MOAI Consultoría](https://moai.ec/#coaching): Consultoría y desarrollo de soluciones empresariales, con un servicio de coaching cognitivo-conductual no clínico para personas y equipos. No es psicoterapia, diagnóstico ni tratamiento.
-- [MOAI Tecnología](https://moai.ec/#tecnologia): Software, inteligencia artificial y productos digitales. Aquí nacen KAIRON (prototipo en pruebas) y RANO (proyecto experimental). Ninguno de los dos es un servicio clínico.
-- [MOAI Diseño](https://moai.ec/#frentes): Arquitectura y diseño. Espacios pensados para quienes los habitan.
-- [MOAI Construcción](https://moai.ec/#direccion): Construcción y obra civil, bajo la dirección del Ing. José Suco Calle, ingeniero civil y mecánico.
+- [MOAI Consultoría](https://www.moai.ec/#coaching): Consultoría y desarrollo de soluciones empresariales, con un servicio de coaching cognitivo-conductual no clínico para personas y equipos. No es psicoterapia, diagnóstico ni tratamiento.
+- [MOAI Tecnología](https://www.moai.ec/#tecnologia): Software, inteligencia artificial y productos digitales. Aquí nacen KAIRON (prototipo en pruebas) y RANO (proyecto experimental). Ninguno de los dos es un servicio clínico.
+- [MOAI Diseño](https://www.moai.ec/#frentes): Arquitectura y diseño. Espacios pensados para quienes los habitan.
+- [MOAI Construcción](https://www.moai.ec/#direccion): Construcción y obra civil, bajo la dirección del Ing. José Suco Calle, ingeniero civil y mecánico.
 
 ## Empresa
 
-- [Historia](https://moai.ec/#historia): Cómo nace MOAI y por qué SUCOSTRUCT S.A.S. B.I.C. la adopta como identidad comercial.
-- [Dirección](https://moai.ec/#direccion): Guillermo Suco, presidente y representante legal; José Suco Calle, director de MOAI Construcción.
+- [Historia](https://www.moai.ec/#historia): Cómo nace MOAI y por qué SUCOSTRUCT S.A.S. B.I.C. la adopta como identidad comercial.
+- [Dirección](https://www.moai.ec/#direccion): Guillermo Suco, presidente y representante legal; José Suco Calle, director de MOAI Construcción.
 - [KAIRON](https://getkairon.app): Inteligencia artificial con enfoque cognitivo-conductual no clínico.
 
 ## Contacto
